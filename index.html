@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Frontend</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading" class="jumbotron text-dark">MongoDB Frontend</h1>
+
+      <button id="homeBtn" type="button" class="btn btn-dark rounded-pill mr-20px">Home</button>
+      <button id="adminBtn" type="button" class="btn btn-dark rounded-pill">Admin</button>
+
+      <div id="homePage">
+        <button id="viewProducts" type="button" class="my-3 btn btn-dark rounded-pill mr-20px">View all Products</button>
+
+        <div id="productCards" class="row my-3">
+        </div>
+
+      </div>
+
+      <div id="adminPage" class="my-5 mx-3 px-3 bg-dark text-light">
+
+        <button id="loginBtn" type="button" class="btn btn-dark rounded-pill mr-20">Login</button>
+        <button id="logoutBtn" type="button" class="btn btn-dark rounded-pill">Logout</button>
+        <button id="registerBtn" type="button" class="btn btn-dark rounded-pill mr-20">Register</button>
+        <button id="viewUserBtn" type="button" class="btn btn-dark rounded-pill">View all users</button>
+
+
+        <form id="loginForm">
+        <label for="username" class=""> Username: </label>
+        <input type="text" id="username" name="username" class="form-control" value="username">
+
+        <label for="password" class=""> Password: </label>
+        <input type="password" name="password" id="password" class="form-control" value="password">
+
+        <button id="submit" name="button" type="submit" class="btn btn-lg"> Submit </button>
+        </form>
+      </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
